@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- CUSTOMIZED TOOLBAR -->
     <include
         layout="@layout/app_bar"
         android:layout_width="match_parent"
@@ -21,23 +23,142 @@
         android:rowCount="3"
         android:padding="14dp">
 
+        <!-- ROW 1 -->
+        <!-- COLUMN 1 -->
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/pendahuluan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:focusable="true">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="10dp">
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_format_quote_24px" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_format_quote_24px"
+                android:text="@string/pendahuluan"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+        <!-- COLUMN 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tujuan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_check_circle_24px"
+                android:text="@string/tujuan"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 2 -->
+        <!-- COLUMN 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/materi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_note_black_24dp"
+                android:text="@string/materi"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+        <!-- COLUMN 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/evaluasi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_assessment_black_24dp"
+                android:text="@string/evaluasi"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 3 -->
+        <!-- COLUMN 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/referensi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_edit_black_24dp"
+                android:text="@string/referensi"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+        <!-- COLUMN 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profil"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_account_circle_black_24dp"
+                android:text="@string/profil"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
         </androidx.cardview.widget.CardView>
     </GridLayout>
 </LinearLayout>
