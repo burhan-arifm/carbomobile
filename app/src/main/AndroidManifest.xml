@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity"
+        <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".ReferensiActivity" />
+        <activity android:name=".EvaluasiActivity" />
+        <activity android:name=".MateriActivity" />
+        <activity android:name=".TujuanActivity" />
+        <activity android:name=".PendahuluanActivity" />
+        <activity android:name=".PetunjukActivity" />
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
