@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".MateriActivity">
 
     <!-- CUSTOMIZED TOOLBAR -->
@@ -55,7 +56,8 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
-                    android:text="@string/lorem_ipsum_1" />
+                    android:text="@string/lorem_ipsum_1"
+                    android:textSize="18sp" />
 
                 <RelativeLayout
                     android:id="@+id/monosakarida"
@@ -63,7 +65,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
                     android:padding="20dp">
 
@@ -74,14 +76,14 @@
                         android:gravity="center"
                         android:text="@string/monosakarida"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_note_black_24dp" />
+                        android:src="@drawable/ic_home" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -90,7 +92,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
                     android:padding="20dp">
 
@@ -101,14 +103,14 @@
                         android:gravity="center"
                         android:text="@string/disakarida"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_note_black_24dp" />
+                        android:src="@drawable/ic_home" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -116,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
                     android:padding="20dp">
 
@@ -127,14 +129,14 @@
                         android:gravity="center"
                         android:text="@string/polisakarida"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_note_black_24dp" />
+                        android:src="@drawable/ic_home" />
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

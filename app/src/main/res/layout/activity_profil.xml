@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ProfilActivity">
 
     <!-- CUSTOMIZED TOOLBAR -->
@@ -38,7 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/profile_picture"
                 android:layout_marginTop="5dp"
-                android:text="@string/lorem_ipsum_1" />
+                android:text="@string/profile_description"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,22 +53,22 @@
                     android:id="@+id/profile_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher_round" />
+                    android:src="@drawable/ic_email" />
 
                 <ImageView
                     android:id="@+id/profile_instagram"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:src="@mipmap/ic_launcher_round" />
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:src="@drawable/ic_instagram" />
 
                 <ImageView
                     android:id="@+id/profile_facebook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:src="@mipmap/ic_launcher_round" />
+                    android:src="@drawable/ic_facebook" />
             </LinearLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
