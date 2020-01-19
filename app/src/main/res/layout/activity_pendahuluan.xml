@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".PendahuluanActivity">
 
     <!-- CUSTOMIZED TOOLBAR -->
@@ -16,7 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="@string/lipsum"
-        android:textSize="17sp" />
+        android:text="@string/pendahuluan_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
 </LinearLayout>

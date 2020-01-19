@@ -20,4 +20,17 @@
     <string name="daftar_pustaka">DAFTAR PUSTAKA</string>
     <string name="sumber_video">SUMBER VIDEO</string>
     <string name="lanjut">Lanjut</string>
+    <string name="pendahuluan_text">Modul kimia android ini berorientasi tiga level representasi yang berfokus pada tema karbohidrat. Modul android ini diharapkan mampu memfasilitasi pemelajar mahasiswa supaya dapat melakukan pembelajaran secara inovatif dan mandiri. Selain itu kedudukan modul ini dalam proses pembelajaran adalah sebagai media yang inovatif dan bersifat fleksibel sehingga memungkinkan pemelajar untuk melakukan proses pembelajaran di manapun dan kapanpun. Semoga modul ini dapat bermanfaat bagi pemelajar, juga pembelajar kimia khususnya yang mempelajari karbohidrat. Serta semoga modul ini dapat menjadi acuan dalam pembuatan media pembelajaran di kemudian hari.</string>
+    <string name="target_1">Melalui visualisasi secara makroskopik, submikroskopik, dan simbolik mahasiswa mampu memahami tata nama dan sifat karbohidrat.</string>
+    <string name="target_2">Melalui visualisasi secara makroskopik, submikroskopik, dan simbolik mahasiswa mampu memahami pembuatan karbohidrat.</string>
+    <string name="target_3">Melalui visualisasi secara makroskopis, submikroskopis, dan simbolik mahasiswa mampu memahami reaksi-reaksi karbohidrat.</string>
+    <string name="profile_description">Pria kelahiran 26 Maret 1996 ini bernama lengkap Muhamad Zeina Farhatuzaki. Jenjang pendidikan yang dilalui dimulai dari SDN 1 Sukamanah, MTsN Bojong, dan MAN 1 Kota Bandung. Kemudian melanjutkan ke jenjang perguruan tinggi di Univeritas Islam Negeri Sunan Gunung Djati Bandung dengan mengambil Program Studi Pendidikan Kimia.
+Selain aktif dalam rutinitas perkuliahan, Ia juga aktif di organisasi intrakampus, ekstrakampus, dan kegiatan di luar perkulihan. Salah satu kegiatan di luar kampus adalah menjadi bagian dari tim nasyid LM Voice asal Bandung.
+Prestasi yang pernah diraih yaitu terpilih sebagai Putra Pendidikan Kimia 2017 pada acara Pekan Raya Pendidikan Kimia tahun 2017. Selain itu bersama kelompok nasyidnya Ia berhasil meraih juara 2 Nasyid se-Asia Tenggara pada acara Festival Nasyid yang bertajuk Da’i Voice yang dilaksanakan di Pattani, Thailand tahun 2017.
+    </string>
+    <string name="rules">PETUNJUK
+        Pilihlah satu jawaban yang Anda anggap benar
+        Jawaban yang Anda pilih akan berubah warna menjadi biru jika benar, dan akan berubah menjadi merah jika salah
+        Klik tombol “Lanjut” untuk melanjutkan pertanyaan berikutnya
+    </string>
 </resources>

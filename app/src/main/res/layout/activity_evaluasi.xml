@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".EvaluasiActivity">
 
     <!-- CUSTOMIZED TOOLBAR -->
@@ -30,9 +31,9 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:padding="10dp"
-                android:text="@string/petunjuk_penggunaan"
+                android:text="@string/rules"
                 android:textColor="@android:color/white"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,21 +42,24 @@
                 android:layout_below="@id/card_title"
                 android:layout_marginBottom="10dp"
                 android:padding="10dp"
-                android:text="@string/lorem_ipsum_1" />
+                android:text="@string/lorem_ipsum_1"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/next_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="10dp"
-                android:background="@color/colorPrimaryDark"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorAccentCustom"
                 android:padding="10dp"
                 android:text="@string/lanjut"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
