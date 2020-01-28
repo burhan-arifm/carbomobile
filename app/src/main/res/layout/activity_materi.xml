@@ -33,6 +33,7 @@
                 android:background="@color/colorPrimary"
                 android:padding="10dp"
                 android:text="@string/karbohidrat"
+                android:fontFamily="@font/gisha"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -40,31 +41,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="vertical">
 
-                <VideoView
-                    android:id="@+id/video_karbohidrat"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="2" />
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="7">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_weight="3"
-                    android:text="@string/lorem_ipsum_1"
-                    android:textSize="18sp" />
+                    <WebView
+                        android:id="@+id/content_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
 
                 <RelativeLayout
                     android:id="@+id/monosakarida"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="60dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
                     android:padding="20dp">
@@ -73,9 +73,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/gisha"
                         android:gravity="center"
                         android:text="@string/monosakarida"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/colorText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -89,9 +90,10 @@
                 <RelativeLayout
                     android:id="@+id/disakarida"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="60dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
                     android:padding="20dp">
@@ -100,9 +102,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/gisha"
                         android:gravity="center"
                         android:text="@string/disakarida"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/colorText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -116,10 +119,12 @@
                 <RelativeLayout
                     android:id="@+id/polisakarida"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="60dp"
                     android:background="@color/colorAccentCustom"
                     android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:padding="20dp">
 
                     <TextView
@@ -128,7 +133,8 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="@string/polisakarida"
-                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/gisha"
+                        android:textColor="@color/colorText"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 

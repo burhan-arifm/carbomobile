@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -17,7 +18,6 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.Objects;
 
 public class MateriActivity extends AppCompatActivity implements View.OnClickListener {
-    private RelativeLayout monosakarida, disakarida, polisakarida;
     private LinearLayout linearLayout;
 
     @Override
@@ -35,13 +35,17 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
         linearLayout = findViewById(R.id.layout_materi);
 
-        monosakarida = findViewById(R.id.monosakarida);
-        disakarida = findViewById(R.id.disakarida);
-        polisakarida = findViewById(R.id.polisakarida);
+        RelativeLayout monosakarida = findViewById(R.id.monosakarida);
+        RelativeLayout disakarida = findViewById(R.id.disakarida);
+        RelativeLayout polisakarida = findViewById(R.id.polisakarida);
 
         monosakarida.setOnClickListener(this);
         disakarida.setOnClickListener(this);
         polisakarida.setOnClickListener(this);
+
+        WebView content_wrapper = findViewById(R.id.content_main);
+        content_wrapper.getSettings().setJavaScriptEnabled(true);
+        content_wrapper.loadUrl("file:///android_asset/contents/content_main.html");
     }
 
     @Override

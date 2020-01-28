@@ -10,7 +10,6 @@
     </style>
 
     <style name="AppTheme.Splash" parent="AppTheme">
-        <item name="android:background">@drawable/splash_screen</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 

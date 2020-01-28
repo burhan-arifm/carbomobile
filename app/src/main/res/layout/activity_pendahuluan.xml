@@ -13,12 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <WebView
+        android:id="@+id/pendahuluan_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:text="@string/pendahuluan_text"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
-
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp" />
 </LinearLayout>

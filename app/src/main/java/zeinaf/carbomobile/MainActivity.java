@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView pendahuluan, tujuan, materi, evaluasi, referensi, profil;
+    private RelativeLayout pendahuluan, tujuan, materi, evaluasi, referensi, profil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
