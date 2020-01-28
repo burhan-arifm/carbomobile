@@ -25,6 +25,10 @@ public class ProfilActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.profil).toUpperCase());
+
+//        WebView profileDesc = findViewById(R.id.profile_description);
+//        profileDesc.setVerticalScrollBarEnabled(true);
+//        profileDesc.loadData(getString(R.string.profile_description), "text/html; charset=utf-8", "utf-8");
     }
 
     @Override

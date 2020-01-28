@@ -1,8 +1,10 @@
 package zeinaf.carbomobile;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,10 @@ public class PendahuluanActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.pendahuluan).toUpperCase());
+
+        WebView content_wrapper = findViewById(R.id.pendahuluan_wrapper);
+        content_wrapper.setBackgroundColor(Color.TRANSPARENT);
+        content_wrapper.loadUrl("file:///android_asset/contents/pendahuluan.html");
     }
 
     @Override

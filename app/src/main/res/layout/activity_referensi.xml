@@ -35,6 +35,7 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
+                android:fontFamily="@font/gisha"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -43,13 +44,19 @@
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
-                <TextView
+                <com.bluejamesbond.text.DocumentView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
-                    android:text="@string/lorem_ipsum_1"
-                    android:textSize="18sp" />
+                    app:documentView_antialias="true"
+                    app:documentView_cacheConfig="auto_quality"
+                    app:documentView_lineHeightMultiplier="1.1"
+                    app:documentView_text="@string/lorem_ipsum_1"
+                    app:documentView_textAlignment="justified"
+                    app:documentView_textColor="@android:color/black"
+                    app:documentView_textSize="18sp"
+                    app:documentView_textTypefacePath="font/gisha_regular.ttf" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -77,6 +84,7 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
+                android:fontFamily="@font/gisha"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -90,7 +98,9 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
-                    android:text="@string/lorem_ipsum_1"
+                    android:fontFamily="@font/gisha"
+                    android:text="@string/lorem_ipsum_2"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
@@ -119,6 +129,7 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
+                android:fontFamily="@font/gisha"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -132,7 +143,9 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
-                    android:text="@string/lorem_ipsum_1"
+                    android:fontFamily="@font/gisha"
+                    android:text="@string/video_ref_01"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>

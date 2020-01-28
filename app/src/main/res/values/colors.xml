@@ -2,8 +2,13 @@
 <resources>
     <color name="colorPrimary">#FF6A00</color>
     <color name="colorPrimaryDark">#ED4F00</color>
-    <color name="colorAccent">#D81B60</color>
     <color name="colorAccentCustom">#FFA100</color>
     <color name="colorText">#FFFF99</color>
     <color name="colorTextActionBar">#FFC35C</color>
+    <color name="transparentAccent">#66FFA100</color>
+    <color name="trueAnswer">#138732</color>
+    <color name="trueBackground">#5551d675</color>
+    <color name="falseAnswer">#bd2424</color>
+    <color name="falseBackground">#55d65151</color>
+    <color name="disabledText">#c9c9c9</color>
 </resources>
