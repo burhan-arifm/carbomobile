@@ -8,8 +8,6 @@
     <string name="profil">Profil</string>
     <string name="evaluasi">Evaluasi</string>
     <string name="referensi">Referensi</string>
-    <string name="lorem_ipsum_1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</string>
-    <string name="lorem_ipsum_2">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</string>
     <string name="karbohidrat">Karbohidrat</string>
     <string name="monosakarida">Monosakarida</string>
     <string name="disakarida">Disakarida</string>
@@ -28,5 +26,26 @@
     </string>
     <string name="help_01">Beberapa tombol utama serta fungsinya:</string>
     <string name="help_02">Beberapa tombol navigasi menu:</string>
-    <string name="video_ref_01">https://youtu.be/Ko7C50M4zMM</string>
+    <string name="list_pustaka">
+        <![CDATA[
+        <ul>
+            <li>Fessenden R. J. &amp; Fessenden J. S. (1998). Organic Chemistry (3rd ed.). Missoula: University of Montana.</li>
+            <li>Solomon T. W. G., &amp; Frihle C. B. (2014). Organic Chemistry (11th ed.). New Jersey: John Wiley &amp; Sons Inc.</li>
+        </ul>
+        ]]>
+    </string>
+    <string name="picture_references">
+        <![CDATA[
+        <ul>
+            <li>https://www.pexels.com/id-id/foto/257208/</li>
+        </ul>
+        ]]>
+    </string>
+    <string name="video_references">
+        <![CDATA[
+        <ul>
+            <li>https://youtu.be/Ko7C50M4zMM</li>
+        </ul>
+        ]]>
+    </string>
 </resources>

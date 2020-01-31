@@ -38,113 +38,109 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="2dp"
-                    android:layout_weight="7">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <WebView
                         android:id="@+id/content_main"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </RelativeLayout>
+                        android:layout_height="wrap_content" />
 
 
-                <RelativeLayout
-                    android:id="@+id/monosakarida"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/colorAccentCustom"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+                    <RelativeLayout
+                        android:id="@+id/monosakarida"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorAccentCustom"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/gisha"
-                        android:gravity="center"
-                        android:text="@string/monosakarida"
-                        android:textColor="@color/colorText"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gisha"
+                            android:gravity="center"
+                            android:text="@string/monosakarida"
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_home" />
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_home" />
+                    </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/disakarida"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/colorAccentCustom"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+                    <RelativeLayout
+                        android:id="@+id/disakarida"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorAccentCustom"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/gisha"
-                        android:gravity="center"
-                        android:text="@string/disakarida"
-                        android:textColor="@color/colorText"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gisha"
+                            android:gravity="center"
+                            android:text="@string/disakarida"
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_home" />
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_home" />
+                    </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/polisakarida"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@color/colorAccentCustom"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:padding="20dp">
+                    <RelativeLayout
+                        android:id="@+id/polisakarida"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorAccentCustom"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="@string/polisakarida"
-                        android:fontFamily="@font/gisha"
-                        android:textColor="@color/colorText"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gisha"
+                            android:gravity="center"
+                            android:text="@string/polisakarida"
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_home" />
-                </RelativeLayout>
-            </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_home" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
