@@ -11,4 +11,5 @@
     <color name="falseAnswer">#bd2424</color>
     <color name="falseBackground">#55d65151</color>
     <color name="disabledText">#c9c9c9</color>
+    <color name="lines">#C4922D</color>
 </resources>

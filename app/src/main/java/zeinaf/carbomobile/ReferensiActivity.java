@@ -4,6 +4,7 @@
 package zeinaf.carbomobile;
 
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.bluejamesbond.text.DocumentView;
 
 import java.util.Objects;
 
@@ -28,6 +31,15 @@ public class ReferensiActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.referensi).toUpperCase());
+
+        DocumentView daftarPustaka = findViewById(R.id.daftar_pustaka);
+        daftarPustaka.setText(Html.fromHtml(getString(R.string.list_pustaka)));
+
+        DocumentView daftarGambar = findViewById(R.id.sumber_gambar);
+        daftarGambar.setText(Html.fromHtml(getString(R.string.picture_references)));
+
+        DocumentView daftarVideo = findViewById(R.id.sumber_video);
+        daftarVideo.setText(Html.fromHtml(getString(R.string.video_references)));
     }
 
     @Override

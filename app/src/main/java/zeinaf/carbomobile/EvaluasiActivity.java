@@ -97,26 +97,28 @@ public class EvaluasiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int selectedAnswer = answersWrapper.getCheckedRadioButtonId();
-                if (shuffledAnswers[selectedAnswer][1].equals("true")) {
-                    answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.trueBackground));
-                    ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.trueAnswer));
-                    for (int i = 0; i < shuffledAnswers.length; i++) {
-                        if (i != selectedAnswer) {
-                            ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.disabledText));
-                            answersWrapper.getChildAt(i).setEnabled(false);
-                        }
-                    }
-                } else {
-                    answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.falseBackground));
-                    ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.falseAnswer));
-                    for (int i = 0; i < shuffledAnswers.length; i++) {
-                        if (i != selectedAnswer) {
-                            answersWrapper.getChildAt(i).setEnabled(false);
-                            if (shuffledAnswers[i][1].equals("true")) {
-                                answersWrapper.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.trueBackground));
-                                ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.trueAnswer));
-                            } else {
+                if (selectedAnswer > -1) {
+                    if (shuffledAnswers[selectedAnswer][1].equals("true")) {
+                        answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.trueBackground));
+                        ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.trueAnswer));
+                        for (int i = 0; i < shuffledAnswers.length; i++) {
+                            if (i != selectedAnswer) {
                                 ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.disabledText));
+                                answersWrapper.getChildAt(i).setEnabled(false);
+                            }
+                        }
+                    } else {
+                        answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.falseBackground));
+                        ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.falseAnswer));
+                        for (int i = 0; i < shuffledAnswers.length; i++) {
+                            if (i != selectedAnswer) {
+                                answersWrapper.getChildAt(i).setEnabled(false);
+                                if (shuffledAnswers[i][1].equals("true")) {
+                                    answersWrapper.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.trueBackground));
+                                    ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.trueAnswer));
+                                } else {
+                                    ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.disabledText));
+                                }
                             }
                         }
                     }
