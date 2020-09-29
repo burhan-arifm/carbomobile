@@ -1,5 +1,6 @@
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -48,8 +49,12 @@ public class EvaluasiActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 break;
         }
 
@@ -85,7 +90,7 @@ public class EvaluasiActivity extends AppCompatActivity {
             RadioButton button = new RadioButton(this);
             button.setId(i);
             button.setText(shuffledAnswers[i][0]);
-            button.setTypeface(Typeface.createFromAsset(getAssets(), "font/gisha_regular.ttf"), Typeface.BOLD);
+            button.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/alegreya_sans.ttf"), Typeface.BOLD);
             button.setTextSize(15);
             button.setLayoutParams(new RadioGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             answersWrapper.addView(button);

@@ -1,6 +1,8 @@
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -61,8 +63,12 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 break;
         }
 
@@ -72,12 +78,11 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         Snackbar snackbar;
+        Intent intent = new Intent(this, PendalamanMateriActivity.class);
 
         switch (v.getId()) {
             case R.id.monosakarida:
-//                startActivity(new Intent(this, MonosakaridaActivity.class));
-                snackbar = Snackbar.make(linearLayout, "Menuju ke " + getString(R.string.monosakarida).toUpperCase(), Snackbar.LENGTH_SHORT);
-                snackbar.show();
+                intent.putExtra("materi", "monosakarida");
                 break;
             case R.id.disakarida:
 //                startActivity(new Intent(this, DisakaridaActivity.class));
@@ -90,5 +95,7 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
                 snackbar.show();
                 break;
         }
+
+        startActivity(intent);
     }
 }

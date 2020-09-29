@@ -15,7 +15,6 @@ import androidx.appcompat.widget.Toolbar;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private RelativeLayout pendahuluan, tujuan, materi, evaluasi, referensi, profil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,18 +23,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setTitle(getString(R.string.petunjuk_penggunaan).toUpperCase());
 
         TextView title = findViewById(R.id.toolbar_title);
-        title.setText(getString(R.string.app_name).toUpperCase());
+        title.setText("home".toUpperCase());
 
-        pendahuluan = findViewById(R.id.pendahuluan);
-        tujuan = findViewById(R.id.tujuan);
-        materi = findViewById(R.id.materi);
-        evaluasi = findViewById(R.id.evaluasi);
-        referensi = findViewById(R.id.referensi);
-        profil = findViewById(R.id.profil);
+        RelativeLayout pendahuluan = findViewById(R.id.pendahuluan);
+        RelativeLayout tujuan = findViewById(R.id.tujuan);
+        RelativeLayout materi = findViewById(R.id.materi);
+        RelativeLayout evaluasi = findViewById(R.id.evaluasi);
+        RelativeLayout referensi = findViewById(R.id.referensi);
+        RelativeLayout profil = findViewById(R.id.profil);
 
         pendahuluan.setOnClickListener(this);
         tujuan.setOnClickListener(this);
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.home, menu);
 
         return true;
     }
@@ -56,8 +55,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.help) {
-            startActivity(new Intent(getApplicationContext(), PetunjukActivity.class));
+        switch (id) {
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                break;
         }
 
         return true;

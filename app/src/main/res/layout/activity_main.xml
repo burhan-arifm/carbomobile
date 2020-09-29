@@ -43,8 +43,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_pendahuluan" />
@@ -55,8 +55,8 @@
                     android:layout_gravity="center"
                     android:text="@string/pendahuluan"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
+                    android:fontFamily="@font/nazegul_regular"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>
@@ -81,8 +81,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_tujuan" />
@@ -93,8 +93,8 @@
                     android:layout_gravity="center"
                     android:text="@string/tujuan"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
+                    android:fontFamily="@font/nazegul_regular"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>
@@ -120,8 +120,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_materi" />
@@ -130,10 +130,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/nazegul_regular"
                     android:text="@string/materi"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>
@@ -157,8 +157,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_evaluasi" />
@@ -169,8 +169,8 @@
                     android:layout_gravity="center"
                     android:text="@string/evaluasi"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
+                    android:fontFamily="@font/nazegul_regular"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>
@@ -196,8 +196,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_referensi" />
@@ -208,8 +208,8 @@
                     android:layout_gravity="center"
                     android:text="@string/referensi"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
+                    android:fontFamily="@font/nazegul_regular"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>
@@ -233,8 +233,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_profil" />
@@ -245,8 +245,8 @@
                     android:layout_gravity="center"
                     android:text="@string/profil"
                     android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nazegul"
+                    android:textColor="@color/background"
+                    android:fontFamily="@font/nazegul_regular"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>

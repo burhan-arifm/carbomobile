@@ -16,36 +16,6 @@
     <string name="daftar_pustaka">DAFTAR PUSTAKA</string>
     <string name="sumber_video">SUMBER VIDEO</string>
     <string name="lanjut">Lanjut</string>
-    <string name="target_1">Melalui visualisasi secara makroskopik, submikroskopik, dan simbolik mahasiswa mampu memahami tata nama dan sifat karbohidrat.</string>
-    <string name="target_2">Melalui visualisasi secara makroskopik, submikroskopik, dan simbolik mahasiswa mampu memahami pembuatan karbohidrat.</string>
-    <string name="target_3">Melalui visualisasi secara makroskopis, submikroskopis, dan simbolik mahasiswa mampu memahami reaksi-reaksi karbohidrat.</string>
-    <string name="profile_description">
-        <li>Pria kelahiran 26 Maret 1996 ini bernama lengkap Muhamad Zeina Farhatuzaki. Jenjang pendidikan yang dilalui dimulai dari SDN 1 Sukamanah, MTsN Bojong, dan MAN 1 Kota Bandung. Kemudian melanjutkan ke jenjang perguruan tinggi di Univeritas Islam Negeri Sunan Gunung Djati Bandung dengan mengambil Program Studi Pendidikan Kimia.</li>\n
-        <li>Selain aktif dalam rutinitas perkuliahan, Ia juga aktif di organisasi intrakampus, ekstrakampus, dan kegiatan di luar perkulihan. Salah satu kegiatan di luar kampus adalah menjadi bagian dari tim nasyid LM Voice asal Bandung.</li>\n
-        <li>Prestasi yang pernah diraih yaitu terpilih sebagai Putra Pendidikan Kimia 2017 pada acara Pekan Raya Pendidikan Kimia tahun 2017. Selain itu bersama kelompok nasyidnya Ia berhasil meraih juara 2 Nasyid se-Asia Tenggara pada acara Festival Nasyid yang bertajuk Da’i Voice yang dilaksanakan di Pattani, Thailand tahun 2017.</li>
-    </string>
     <string name="help_01">Beberapa tombol utama serta fungsinya:</string>
     <string name="help_02">Beberapa tombol navigasi menu:</string>
-    <string name="list_pustaka">
-        <![CDATA[
-        <ul>
-            <li>Fessenden R. J. &amp; Fessenden J. S. (1998). Organic Chemistry (3rd ed.). Missoula: University of Montana.</li>
-            <li>Solomon T. W. G., &amp; Frihle C. B. (2014). Organic Chemistry (11th ed.). New Jersey: John Wiley &amp; Sons Inc.</li>
-        </ul>
-        ]]>
-    </string>
-    <string name="picture_references">
-        <![CDATA[
-        <ul>
-            <li>https://www.pexels.com/id-id/foto/257208/</li>
-        </ul>
-        ]]>
-    </string>
-    <string name="video_references">
-        <![CDATA[
-        <ul>
-            <li>https://youtu.be/Ko7C50M4zMM</li>
-        </ul>
-        ]]>
-    </string>
 </resources>

@@ -1,8 +1,10 @@
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,9 +28,9 @@ public class ProfilActivity extends AppCompatActivity {
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.profil).toUpperCase());
 
-//        WebView profileDesc = findViewById(R.id.profile_description);
-//        profileDesc.setVerticalScrollBarEnabled(true);
-//        profileDesc.loadData(getString(R.string.profile_description), "text/html; charset=utf-8", "utf-8");
+        WebView profile1 = findViewById(R.id.profile_1);
+        profile1.getSettings().setJavaScriptEnabled(true);
+        profile1.loadUrl("file:///android_asset/contents/profile_1.html");
     }
 
     @Override
@@ -44,8 +46,12 @@ public class ProfilActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 break;
         }
 
