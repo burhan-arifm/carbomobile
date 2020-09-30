@@ -1,12 +1,11 @@
-
-
-
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,14 +31,17 @@ public class ReferensiActivity extends AppCompatActivity {
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.referensi).toUpperCase());
 
-        DocumentView daftarPustaka = findViewById(R.id.daftar_pustaka);
-        daftarPustaka.setText(Html.fromHtml(getString(R.string.list_pustaka)));
+        WebView daftarPustaka = findViewById(R.id.daftar_pustaka);
+        WebView daftarGambar = findViewById(R.id.sumber_gambar);
+        WebView daftarVideo = findViewById(R.id.sumber_video);
 
-        DocumentView daftarGambar = findViewById(R.id.sumber_gambar);
-        daftarGambar.setText(Html.fromHtml(getString(R.string.picture_references)));
+        daftarPustaka.getSettings().setJavaScriptEnabled(true);
+        daftarGambar.getSettings().setJavaScriptEnabled(true);
+        daftarVideo.getSettings().setJavaScriptEnabled(true);
 
-        DocumentView daftarVideo = findViewById(R.id.sumber_video);
-        daftarVideo.setText(Html.fromHtml(getString(R.string.video_references)));
+        daftarPustaka.loadUrl("file:///android_asset/contents/referensi/daftar_pustaka.html");
+        daftarGambar.loadUrl("file:///android_asset/contents/referensi/sumber_gambar.html");
+        daftarVideo.loadUrl("file:///android_asset/contents/referensi/sumber_video.html");
     }
 
     @Override
@@ -55,8 +57,12 @@ public class ReferensiActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 break;
         }
 

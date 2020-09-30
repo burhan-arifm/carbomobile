@@ -1,8 +1,10 @@
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,18 @@ public class TujuanActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_title);
         title.setText(getString(R.string.tujuan).toUpperCase());
+
+        WebView tujuan_1 = findViewById(R.id.tujuan_1);
+        WebView tujuan_2 = findViewById(R.id.tujuan_2);
+        WebView tujuan_3 = findViewById(R.id.tujuan_3);
+
+        tujuan_1.getSettings().setJavaScriptEnabled(true);
+        tujuan_2.getSettings().setJavaScriptEnabled(true);
+        tujuan_3.getSettings().setJavaScriptEnabled(true);
+
+        tujuan_1.loadUrl("file:///android_asset/contents/targets/tujuan_1.html");
+        tujuan_2.loadUrl("file:///android_asset/contents/targets/tujuan_2.html");
+        tujuan_3.loadUrl("file:///android_asset/contents/targets/tujuan_3.html");
     }
 
     @Override
@@ -40,8 +54,12 @@ public class TujuanActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 break;
         }
 

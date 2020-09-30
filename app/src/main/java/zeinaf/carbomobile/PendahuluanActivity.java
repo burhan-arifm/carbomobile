@@ -1,5 +1,6 @@
 package zeinaf.carbomobile;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -46,8 +47,12 @@ public class PendahuluanActivity extends AppCompatActivity {
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
+                break;
+            case R.id.home:
+                Intent intent = new Intent(this, CoverActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
                 break;
         }
 

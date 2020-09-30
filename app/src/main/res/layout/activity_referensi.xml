@@ -21,52 +21,45 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/background">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:fontFamily="@font/gisha"
+                        android:fontFamily="@font/alegreya_sans_bold"
                         android:padding="10dp"
                         android:text="@string/daftar_pustaka"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/background"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <com.bluejamesbond.text.DocumentView
+                    <WebView
                         android:id="@+id/daftar_pustaka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        app:documentView_antialias="true"
-                        app:documentView_cacheConfig="auto_quality"
-                        app:documentView_lineHeightMultiplier="1.1"
-                        app:documentView_textAlignment="justified"
-                        app:documentView_textColor="@android:color/black"
-                        app:documentView_textSize="16sp"
-                        app:documentView_textTypefacePath="font/gisha_regular.ttf" />
+                        android:layout_margin="10dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
@@ -74,73 +67,58 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/background">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:fontFamily="@font/gisha"
+                        android:fontFamily="@font/alegreya_sans_bold"
                         android:padding="10dp"
                         android:text="@string/sumber_gambar"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/background"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <com.bluejamesbond.text.DocumentView
+                    <WebView
                         android:id="@+id/sumber_gambar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        app:documentView_antialias="true"
-                        app:documentView_cacheConfig="auto_quality"
-                        app:documentView_lineHeightMultiplier="1.1"
-                        app:documentView_textAlignment="justified"
-                        app:documentView_textColor="@android:color/black"
-                        app:documentView_textSize="16sp"
-                        app:documentView_textTypefacePath="font/gisha_regular.ttf" />
+                        android:layout_margin="10dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/background">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
-                        android:fontFamily="@font/gisha"
+                        android:fontFamily="@font/alegreya_sans_bold"
                         android:padding="10dp"
                         android:text="@string/sumber_video"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/background"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <com.bluejamesbond.text.DocumentView
+                    <WebView
                         android:id="@+id/sumber_video"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        app:documentView_antialias="true"
-                        app:documentView_cacheConfig="auto_quality"
-                        app:documentView_lineHeightMultiplier="1.1"
-                        app:documentView_textAlignment="justified"
-                        app:documentView_textColor="@android:color/black"
-                        app:documentView_textSize="16sp"
-                        app:documentView_textTypefacePath="font/gisha_regular.ttf" />
+                        android:layout_margin="10dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

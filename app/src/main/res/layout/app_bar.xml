@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorTextActionBar"
         android:textSize="20sp"
-        android:fontFamily="@font/nazegul"
+        android:fontFamily="@font/nazegul_regular"
         style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
         android:layout_gravity="center" />
 </androidx.appcompat.widget.Toolbar>
