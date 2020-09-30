@@ -30,11 +30,11 @@ public class PendalamanMateriActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         TextView title = findViewById(R.id.toolbar_title);
-        title.setText(materi.toUpperCase());
+        title.setText("materi".toUpperCase());
 
         WebView content_wrapper = findViewById(R.id.content_materi);
         content_wrapper.getSettings().setJavaScriptEnabled(true);
-        content_wrapper.loadUrl("file:///android_asset/contents/content_" + materi + ".html");
+        content_wrapper.loadUrl("file:///android_asset/contents/materials/" + materi + ".html");
     }
 
     @Override

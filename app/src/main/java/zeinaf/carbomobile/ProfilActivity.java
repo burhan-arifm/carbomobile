@@ -30,7 +30,15 @@ public class ProfilActivity extends AppCompatActivity {
 
         WebView profile1 = findViewById(R.id.profile_1);
         profile1.getSettings().setJavaScriptEnabled(true);
-        profile1.loadUrl("file:///android_asset/contents/profile_1.html");
+        profile1.loadUrl("file:///android_asset/contents/profiles/profile_1.html");
+
+        WebView profile2 = findViewById(R.id.profile_2);
+        profile2.getSettings().setJavaScriptEnabled(true);
+        profile2.loadUrl("file:///android_asset/contents/profiles/profile_2.html");
+
+        WebView profile3 = findViewById(R.id.profile_3);
+        profile3.getSettings().setJavaScriptEnabled(true);
+        profile3.loadUrl("file:///android_asset/contents/profiles/profile_3.html");
     }
 
     @Override

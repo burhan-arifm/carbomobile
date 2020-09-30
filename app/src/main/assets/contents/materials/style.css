@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+    font-family: "Alegreya Sans", sans-serif;
+    font-feature-settings: "pnum" on, "lnum" on;
+    text-align: justify;
+    color: #0c120c;
+    background-color: #fffded;
+}
+p {
+    text-indent: 10%;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+p + figure,
+p + iframe {
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+}
+.subtitle {
+    text-indent: 0%;
+    font-weight: bold;
+    color: #fffded;
+    background-color: #ff6a00;
+    margin: -8px;
+    margin-block-end: 0.75em;
+    padding: 8px;
+}
+.list {
+    text-indent: 0%;
+    margin-block-start: 0.75em;
+    margin-block-end: 0em;
+    padding-inline-start: 1.1em;
+    font-weight: bold;
+}
+.list ~ p,
+.list ~ figure,
+.list ~ iframe {
+    margin-left: 2em;
+}
+figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+figure > img {
+    max-width: 100%;
+    height: auto;
+}
+figure > figcaption {
+    font-size: 0.875em;
+    font-style: italic;
+    text-align: center;
+}
+p:last-child,
+iframe:last-child,
+figure:last-child {
+    margin-block-end: 1em;
+}

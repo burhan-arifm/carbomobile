@@ -36,9 +36,9 @@ public class TujuanActivity extends AppCompatActivity {
         tujuan_2.getSettings().setJavaScriptEnabled(true);
         tujuan_3.getSettings().setJavaScriptEnabled(true);
 
-        tujuan_1.loadUrl("file:///android_asset/contents/tujuan_1.html");
-        tujuan_2.loadUrl("file:///android_asset/contents/tujuan_2.html");
-        tujuan_3.loadUrl("file:///android_asset/contents/tujuan_3.html");
+        tujuan_1.loadUrl("file:///android_asset/contents/targets/tujuan_1.html");
+        tujuan_2.loadUrl("file:///android_asset/contents/targets/tujuan_2.html");
+        tujuan_3.loadUrl("file:///android_asset/contents/targets/tujuan_3.html");
     }
 
     @Override

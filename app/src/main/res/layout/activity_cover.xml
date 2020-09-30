@@ -24,8 +24,8 @@
 
             <ImageView
                 android:id="@+id/help"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:onClick="onClick"
@@ -40,11 +40,12 @@
                 android:fontFamily="@font/nazegul_regular"
                 android:textColor="@color/colorTextActionBar"
                 android:textSize="20sp"
-                android:text="@string/app_name"/>
+                android:text="@string/app_name"
+                android:textAllCaps="true"/>
 
             <ImageView
                 android:id="@+id/start"
-                android:layout_width="48dp"
+                android:layout_width="72dp"
                 android:layout_height="48dp"
                 android:layout_alignParentRight="true"
                 android:onClick="onClick"

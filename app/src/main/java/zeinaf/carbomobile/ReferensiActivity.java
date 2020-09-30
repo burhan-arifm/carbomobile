@@ -39,9 +39,9 @@ public class ReferensiActivity extends AppCompatActivity {
         daftarGambar.getSettings().setJavaScriptEnabled(true);
         daftarVideo.getSettings().setJavaScriptEnabled(true);
 
-        daftarPustaka.loadUrl("file:///android_asset/contents/daftar_pustaka.html");
-        daftarGambar.loadUrl("file:///android_asset/contents/sumber_gambar.html");
-        daftarVideo.loadUrl("file:///android_asset/contents/sumber_video.html");
+        daftarPustaka.loadUrl("file:///android_asset/contents/referensi/daftar_pustaka.html");
+        daftarGambar.loadUrl("file:///android_asset/contents/referensi/sumber_gambar.html");
+        daftarVideo.loadUrl("file:///android_asset/contents/referensi/sumber_video.html");
     }
 
     @Override

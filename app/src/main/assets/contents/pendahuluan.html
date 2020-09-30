@@ -5,30 +5,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <style>
-            @font-face {
-                font-family: "Alegreya Sans";
-                src: url("file:///android_asset/fonts/alegreya_sans.ttf");
-                font-weight: normal;
-                font-style: normal;
-            }
-            @font-face {
-                font-family: "Alegreya Sans";
-                src: url("file:///android_asset/fonts/alegreya_sans_bold.ttf");
-                font-weight: 700;
-                font-style: normal;
-            }
-            @font-face {
-                font-family: "Alegreya Sans";
-                src: url("file:///android_asset/fonts/alegreya_sans_italic.ttf");
-                font-weight: normal;
-                font-style: italic;
-            }
-            @font-face {
-                font-family: "Alegreya Sans";
-                src: url("file:///android_asset/fonts/alegreya_sans_bold_italic.ttf");
-                font-weight: 700;
-                font-style: italic;
-            }
+            @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
             /* START: IGNORE */
             html {
                 position: fixed;
@@ -53,18 +30,18 @@
             /* END: IGNORE */
 
             p {
-                line-height: 125%;
+                line-height: 1;
                 font-size: 1em;
             }
             p:first-letter {
-                font-size: 4em;
+                font-size: 4.5em;
                 float: left;
                 line-height: 1;
                 display: inline-block;
                 color: #ff6a00;
             }
             .aligned-to-top p:first-letter {
-                margin: 0.03em 0.05em -0.1em 0.01em;
+                margin: 0.03em 0.05em -0.3em 0.01em;
             }
         </style>
     </head>

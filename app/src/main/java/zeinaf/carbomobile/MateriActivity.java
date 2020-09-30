@@ -37,17 +37,19 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
         linearLayout = findViewById(R.id.layout_materi);
 
-        RelativeLayout monosakarida = findViewById(R.id.monosakarida);
-        RelativeLayout disakarida = findViewById(R.id.disakarida);
-        RelativeLayout polisakarida = findViewById(R.id.polisakarida);
+        RelativeLayout content1 = findViewById(R.id.content_1);
+        RelativeLayout content2 = findViewById(R.id.content_2);
+        RelativeLayout content3 = findViewById(R.id.content_3);
+        RelativeLayout content4 = findViewById(R.id.content_4);
 
-        monosakarida.setOnClickListener(this);
-        disakarida.setOnClickListener(this);
-        polisakarida.setOnClickListener(this);
+        content1.setOnClickListener(this);
+        content2.setOnClickListener(this);
+        content3.setOnClickListener(this);
+        content4.setOnClickListener(this);
 
         WebView content_wrapper = findViewById(R.id.content_main);
         content_wrapper.getSettings().setJavaScriptEnabled(true);
-        content_wrapper.loadUrl("file:///android_asset/contents/content_main.html");
+        content_wrapper.loadUrl("file:///android_asset/contents/materials/content_main.html");
     }
 
     @Override
@@ -81,18 +83,17 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent = new Intent(this, PendalamanMateriActivity.class);
 
         switch (v.getId()) {
-            case R.id.monosakarida:
-                intent.putExtra("materi", "monosakarida");
+            case R.id.content_1:
+                intent.putExtra("materi", "content_1");
                 break;
-            case R.id.disakarida:
-//                startActivity(new Intent(this, DisakaridaActivity.class));
-                snackbar = Snackbar.make(linearLayout, "Menuju ke " + getString(R.string.disakarida).toUpperCase(), Snackbar.LENGTH_SHORT);
-                snackbar.show();
+            case R.id.content_2:
+                intent.putExtra("materi", "content_2");
                 break;
-            case R.id.polisakarida:
-//                startActivity(new Intent(this, PolisakaridaActivity.class));
-                snackbar = Snackbar.make(linearLayout, "Menuju ke " + getString(R.string.polisakarida).toUpperCase(), Snackbar.LENGTH_SHORT);
-                snackbar.show();
+            case R.id.content_3:
+                intent.putExtra("materi", "content_3");
+                break;
+            case R.id.content_4:
+                intent.putExtra("materi", "content_4");
                 break;
         }
 

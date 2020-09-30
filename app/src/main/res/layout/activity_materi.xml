@@ -58,7 +58,7 @@
 
 
                         <RelativeLayout
-                            android:id="@+id/monosakarida"
+                            android:id="@+id/content_1"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:layout_marginStart="10dp"
@@ -73,22 +73,15 @@
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/alegreya_sans"
                                 android:gravity="center"
-                                android:text="@string/monosakarida"
+                                android:text="Sifat Fisik dan Struktur Karbohidrat"
                                 android:textColor="@color/colorText"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:layout_marginStart="20dp"/>
-
-                            <ImageView
-                                android:layout_width="76dp"
-                                android:layout_height="104dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_marginEnd="20dp"
-                                android:src="@drawable/monosakarida" />
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/disakarida"
+                            android:id="@+id/content_2"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:layout_marginStart="10dp"
@@ -102,23 +95,16 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/alegreya_sans"
-                                android:gravity="center"
-                                android:text="@string/disakarida"
+                                android:gravity="center_vertical"
+                                android:text="Klasifikasi, Konfigurasi dan Siklisasi Monosakarida"
                                 android:textColor="@color/colorText"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:layout_marginStart="20dp"/>
-
-                            <ImageView
-                                android:layout_width="160dp"
-                                android:layout_height="104dp"
-                                android:layout_alignParentEnd="true"
-                                android:src="@drawable/disakarida"
-                                android:layout_marginEnd="20dp"/>
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/polisakarida"
+                            android:id="@+id/content_3"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:layout_marginStart="10dp"
@@ -133,18 +119,36 @@
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/alegreya_sans"
                                 android:gravity="center"
-                                android:text="@string/polisakarida"
+                                android:text="Sifat Kimia Karbohidrat"
                                 android:textColor="@color/colorText"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:layout_marginStart="20dp"/>
 
-                            <ImageView
-                                android:layout_width="248dp"
-                                android:layout_height="104dp"
-                                android:layout_alignParentEnd="true"
-                                android:src="@drawable/polisakarida"
-                                android:layout_marginEnd="20dp"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/content_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorAccentCustom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:gravity="center"
+                                android:text="Disakarida dan Polisakarida"
+                                android:textColor="@color/colorText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="20dp"/>
+
                         </RelativeLayout>
                     </LinearLayout>
                 </LinearLayout>

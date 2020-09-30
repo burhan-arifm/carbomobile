@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CarboMobile</string>
-    <string name="petunjuk_penggunaan">Petunjuk</string>
+    <string name="petunjuk_penggunaan">Bantuan</string>
     <string name="pendahuluan">Pendahuluan</string>
     <string name="tujuan">Tujuan</string>
     <string name="goto_home">Kembali ke Beranda</string>
