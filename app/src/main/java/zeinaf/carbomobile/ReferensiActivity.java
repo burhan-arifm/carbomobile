@@ -2,7 +2,6 @@ package zeinaf.carbomobile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
@@ -11,8 +10,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
-import com.bluejamesbond.text.DocumentView;
 
 import java.util.Objects;
 
@@ -60,7 +57,7 @@ public class ReferensiActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.home:
-                Intent intent = new Intent(this, CoverActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 break;

@@ -10,8 +10,12 @@ figure {
     flex-wrap: wrap;
 }
 img {
-    max-width: 45%;
+    max-width: 100%;
     height: auto;
     margin: 0.125em;
     border: 1px solid #0c120c;
+}
+figure > img {
+    max-width: 45%;
+    height: auto;
 }
