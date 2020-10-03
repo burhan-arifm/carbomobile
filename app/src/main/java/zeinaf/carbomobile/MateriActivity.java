@@ -2,7 +2,6 @@ package zeinaf.carbomobile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -68,7 +67,7 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
                 finish();
                 break;
             case R.id.home:
-                Intent intent = new Intent(this, CoverActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 break;

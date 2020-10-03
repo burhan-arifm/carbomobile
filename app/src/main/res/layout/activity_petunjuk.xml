@@ -24,7 +24,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:padding="40dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
 
@@ -46,14 +46,38 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="2.5dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/square_dark">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_bulb" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="8"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="Petunjuk Penggunaan"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -63,46 +87,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_dark">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_centerInParent="true"
-                                        android:src="@drawable/ic_lightbulb" />
-                                </RelativeLayout>
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical|start"
-                                    android:layout_marginStart="5dp"
-                                    android:layout_weight="8"
-                                    android:fontFamily="@font/alegreya_sans"
-                                    android:text="Petunjuk Penggunaan"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="10">
-
-                                <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:background="@drawable/square_dark">
-
-                                    <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_arrow_back_24dp" />
                                 </RelativeLayout>
@@ -116,48 +107,69 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Kembali ke halaman sebelumnya"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/square_dark">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_home" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="8"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="Kembali ke halaman utama"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="2.5dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="10">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="10">
+                            <RelativeLayout
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/square_dark">
 
-                                <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:background="@drawable/square_dark">
+                                <ImageView
+                                    android:layout_width="44dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_start" />
+                            </RelativeLayout>
 
-                                    <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_centerInParent="true"
-                                        android:src="@drawable/ic_home" />
-                                </RelativeLayout>
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical|start"
-                                    android:layout_marginStart="5dp"
-                                    android:layout_weight="8"
-                                    android:fontFamily="@font/alegreya_sans"
-                                    android:text="Kembali ke halaman utama"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="8"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="Memulai e-module CarboMobile"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -176,14 +188,38 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="2.5dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:background="@drawable/square_light">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_pendahuluan" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="8"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="Menuju ke halaman pendahuluan"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -193,46 +229,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_light">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_centerInParent="true"
-                                        android:src="@drawable/ic_pendahuluan" />
-                                </RelativeLayout>
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical|start"
-                                    android:layout_marginStart="5dp"
-                                    android:layout_weight="8"
-                                    android:fontFamily="@font/alegreya_sans"
-                                    android:text="Menuju ke halaman pendahuluan"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal"
-                                android:padding="5dp"
-                                android:weightSum="10">
-
-                                <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:background="@drawable/square_light">
-
-                                    <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_materi" />
                                 </RelativeLayout>
@@ -246,7 +249,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman materi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -257,14 +260,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_light">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_referensi" />
                                 </RelativeLayout>
@@ -278,16 +280,8 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman referensi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="2.5dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -297,14 +291,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_light">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_tujuan" />
                                 </RelativeLayout>
@@ -318,7 +311,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman tujuan"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -329,14 +322,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_light">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_evaluasi" />
                                 </RelativeLayout>
@@ -350,7 +342,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman evaluasi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -361,14 +353,13 @@
                                 android:weightSum="10">
 
                                 <RelativeLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
                                     android:background="@drawable/square_light">
 
                                     <ImageView
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
                                         android:layout_centerInParent="true"
                                         android:src="@drawable/ic_profil" />
                                 </RelativeLayout>
@@ -382,9 +373,8 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman profil"
                                     android:textColor="@android:color/black"
-                                    android:textSize="12sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
-                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

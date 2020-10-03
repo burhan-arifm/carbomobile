@@ -1,7 +1,6 @@
 package zeinaf.carbomobile;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -28,19 +27,11 @@ public class PetunjukActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.home, menu);
-
-        return true;
-    }
-
-    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
         switch (id) {
             case android.R.id.home:
-            case R.id.home:
                 finish();
                 break;
         }

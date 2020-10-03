@@ -1,39 +1,107 @@
 package zeinaf.carbomobile;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Objects;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class EvaluasiActivity extends AppCompatActivity {
-    private TextView nextButton;
 
-    private static String[][] shuffleAnswers(String[][] answers) {
-        Random rnd = ThreadLocalRandom.current();
-        for (int i = answers.length - 1; i > 0; i--) {
-            int index = rnd.nextInt(i + 1);
-            // Simple swap
-            String[] a = answers[index];
-            answers[index] = answers[i];
-            answers[i] = a;
+    private QuestionFragment question;
+    private TextView questionButton;
+    private TextView questionNumberView;
+
+    private int questionNumber;
+    private int score;
+    private boolean answered;
+    private boolean finished;
+    private Iterator<QuestionFragment> iterator;
+
+    private List<QuestionFragment> getQuestions() {
+        List<QuestionFragment> questions = new ArrayList<QuestionFragment>();
+        String[][][] answers = {
+                {
+                        {"2", "true"},
+                        {"1", "false"},
+                        {"3", "false"},
+                        {"4", "false"}
+                },
+                {
+                        {"Diastereomer", "true"},
+                        {"Tautomer", "false"},
+                        {"Enansiomer", "false"},
+                        {"Isomer konstitusional", "false"}
+                },
+                {
+                        {"Enansiomer", "true"},
+                        {"Tautomer", "false"},
+                        {"Diastereomer", "false"},
+                        {"Isomer konstitusional", "false"}
+                },
+                {
+                        {"(2)", "true"},
+                        {"(1)", "false"},
+                        {"(3)", "false"},
+                        {"(2) dan (3)", "false"}
+                },
+                {
+                        {"1", "true"},
+                        {"2", "false"},
+                        {"3", "false"},
+                        {"4", "false"}
+            },
+            {
+                {"4", "true"},
+                {"1", "false"},
+                {"2", "false"},
+                {"3", "false"}
+            },
+            {
+                {"3", "true"},
+                    {"1", "false"},
+                    {"2", "false"},
+                    {"4", "false"}
+            },
+                {
+                        {"2", "true"},
+                        {"1", "false"},
+                        {"3", "false"},
+                        {"4", "false"}
+                },
+                {
+                        {"Anomer tunggal", "true"},
+                        {"Mutarotasi mengacu pada konversi anomer yang berasal dari hemiasetal karbohidrat menjadi campuran dua anomer yang berada dalam keadaan kesetimbangan.", "false"},
+                        {"β-D-glukopiranosa lebih stabil dari α-D-glukopiranosa", "false"},
+                        {"Anomer adalah diastereomer satu sama lain", "false"}
+                },
+                {
+                        {"4", "true"},
+                        {"1", "false"},
+                        {"2", "false"},
+                        {"3", "false"}
+                }
+        };
+
+        for (int i = 0; i < answers.length; i++) {
+            questions.add(QuestionFragment.newInstance(i + 1, answers[i]));
         }
+        Collections.shuffle(questions);
 
-        return answers;
+        return questions;
     }
 
     @Override
@@ -52,8 +120,8 @@ public class EvaluasiActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.home:
-                Intent intent = new Intent(this, CoverActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 break;
         }
@@ -66,6 +134,13 @@ public class EvaluasiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evaluasi);
 
+        List<QuestionFragment> questions = getQuestions();
+        iterator = questions.iterator();
+        questionNumber = 1;
+        score = 0;
+        answered = false;
+        finished = false;
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -76,123 +151,45 @@ public class EvaluasiActivity extends AppCompatActivity {
 
         WebView rules = findViewById(R.id.rules);
         rules.loadUrl("file:///android_asset/contents/questions/rules.html");
+        questionNumberView = findViewById(R.id.question_number);
+        getSupportFragmentManager().beginTransaction().add(R.id.question, iterator.next()).commit();
+        questionButton = findViewById(R.id.next_button);
+        questionButton.setText("PERIKSA JAWABAN");
+    }
 
-        //  Q&A Generator
-        WebView question = findViewById(R.id.question_wrapper);
-        TextView questionNumber = findViewById(R.id.question_number);
-        final RadioGroup answersWrapper = findViewById(R.id.answer_group);
-        String[][][] answers = {
-            {
-                {"2", "true"},
-                {"1", "false"},
-                {"3", "false"},
-                {"4", "false"}
-            },
-            {
-                {"Diastereomer", "true"},
-                {"Tautomer", "false"},
-                {"Enansiomer", "false"},
-                {"Isomer konstitusional", "false"}
-            },
-            {
-                {"Enansiomer", "true"},
-                {"Tautomer", "false"},
-                {"Diastereomer", "false"},
-                {"Isomer konstitusional", "false"}
-            },
-            {
-                {"(2)", "true"},
-                {"(1)", "false"},
-                {"(3)", "false"},
-                {"(2) dan (3)", "false"}
-            },
-            {
-                {"1", "true"},
-                {"2", "false"},
-                {"3", "false"},
-                {"4", "false"}
-            },
-            {
-                {"4", "true"},
-                {"1", "false"},
-                {"2", "false"},
-                {"3", "false"}
-            },
-            {
-                {"3", "true"},
-                {"1", "false"},
-                {"2", "false"},
-                {"4", "false"}
-            },
-            {
-                {"2", "true"},
-                {"1", "false"},
-                {"3", "false"},
-                {"4", "false"}
-            },
-            {
-                {"Anomer tunggal", "true"},
-                {"Mutarotasi mengacu pada konversi anomer yang berasal dari hemiasetal karbohidrat menjadi campuran dua anomer yang berada dalam keadaan kesetimbangan.", "false"},
-                {"β-D-glukopiranosa lebih stabil dari α-D-glukopiranosa", "false"},
-                {"Anomer adalah diastereomer satu sama lain", "false"}
-            },
-            {
-                {"4", "true"},
-                {"1", "false"},
-                {"2", "false"},
-                {"3", "false"}
-            }
-        };
-
-        int i = 0;
-        do {
-            final String[][] shuffledAnswers = shuffleAnswers(answers[i]);
-            question.loadUrl("file:///android_asset/contents/questions/question_" + (i+1) + ".html");
-            questionNumber.setText((i+1) + ".");
-            for (int j = 0; j < shuffledAnswers.length; j++) {
-                RadioButton button = new RadioButton(this);
-                button.setId(j);
-                button.setText(shuffledAnswers[j][0]);
-                button.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/alegreya_sans.ttf"), Typeface.BOLD);
-                button.setTextSize(15);
-                button.setLayoutParams(new RadioGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                answersWrapper.addView(button);
-            }
-
-            // Button trigger
-            nextButton = findViewById(R.id.next_button);
-            nextButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int selectedAnswer = answersWrapper.getCheckedRadioButtonId();
-                    if (selectedAnswer > -1) {
-                        if (shuffledAnswers[selectedAnswer][1].equals("true")) {
-                            answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.trueBackground));
-                            ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.trueAnswer));
-                            for (int i = 0; i < shuffledAnswers.length; i++) {
-                                if (i != selectedAnswer) {
-                                    ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.disabledText));
-                                    answersWrapper.getChildAt(i).setEnabled(false);
-                                }
-                            }
-                        } else {
-                            answersWrapper.getChildAt(selectedAnswer).setBackgroundColor(getResources().getColor(R.color.falseBackground));
-                            ((RadioButton) answersWrapper.getChildAt(selectedAnswer)).setTextColor(getResources().getColor(R.color.falseAnswer));
-                            for (int i = 0; i < shuffledAnswers.length; i++) {
-                                if (i != selectedAnswer) {
-                                    answersWrapper.getChildAt(i).setEnabled(false);
-                                    if (shuffledAnswers[i][1].equals("true")) {
-                                        answersWrapper.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.trueBackground));
-                                        ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.trueAnswer));
-                                    } else {
-                                        ((RadioButton) answersWrapper.getChildAt(i)).setTextColor(getResources().getColor(R.color.disabledText));
-                                    }
-                                }
-                            }
-                        }
+    public void onClick(View view) {
+        if (!finished) {
+            if (!answered) {
+                QuestionFragment fragment = (QuestionFragment) getSupportFragmentManager().findFragmentById(R.id.question);
+                String result = fragment.checkAnswer();
+                if (!result.equals("unanswered")) {
+                    if (Boolean.valueOf(result)) {
+                        score++;
+                    }
+                    answered = !answered;
+                    if (iterator.hasNext()) {
+                        questionButton.setText("SOAL SELANJUTNYA");
+                    } else {
+                        questionButton.setText("LIHAT SKOR SAYA");
                     }
                 }
-            });
-        } while (i<answers.length);
+            } else {
+                if (iterator.hasNext()) {
+                    questionNumberView.setText(String.format("%d.", ++questionNumber));
+                    answered = false;
+                    questionButton.setText("PERIKSA JAWABAN");
+                    getSupportFragmentManager().beginTransaction().replace(R.id.question, iterator.next(), "Next Question").commit();
+                } else {
+//                    questionNumberView.setVisibility(View.INVISIBLE);
+                    ViewGroup parent = (ViewGroup) questionNumberView.getParent();
+                    parent.removeView(questionNumberView);
+                    questionButton.setText("KEMBALI KE MENU UTAMA");
+                    finished = true;
+                    getSupportFragmentManager().beginTransaction().replace(R.id.question, ScoreFragment.newInstance(String.valueOf(score)), "Final Score").commit();
+                }
+            }
+        } else {
+            finish();
+        }
     }
 }

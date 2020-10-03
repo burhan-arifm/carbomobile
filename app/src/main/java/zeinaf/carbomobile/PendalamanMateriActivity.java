@@ -1,16 +1,15 @@
 package zeinaf.carbomobile;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.Objects;
 
@@ -34,6 +33,7 @@ public class PendalamanMateriActivity extends AppCompatActivity {
 
         WebView content_wrapper = findViewById(R.id.content_materi);
         content_wrapper.getSettings().setJavaScriptEnabled(true);
+        content_wrapper.setBackgroundColor(0);
         content_wrapper.loadUrl("file:///android_asset/contents/materials/" + materi + ".html");
     }
 
@@ -53,7 +53,7 @@ public class PendalamanMateriActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.home:
-                Intent intent = new Intent(this, CoverActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 break;
