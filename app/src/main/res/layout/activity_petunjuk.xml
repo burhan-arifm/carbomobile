@@ -25,7 +25,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="40dp"
-                app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -74,9 +73,9 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_weight="8"
                                 android:fontFamily="@font/alegreya_sans"
-                                android:text="Petunjuk Penggunaan"
+                                android:text="Menuju ke halaman bantuan"
                                 android:textColor="@android:color/black"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                             <LinearLayout
@@ -107,7 +106,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Kembali ke halaman sebelumnya"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                         <LinearLayout
@@ -138,7 +137,7 @@
                                 android:fontFamily="@font/alegreya_sans"
                                 android:text="Kembali ke halaman utama"
                                 android:textColor="@android:color/black"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -169,7 +168,7 @@
                                 android:fontFamily="@font/alegreya_sans"
                                 android:text="Memulai e-module CarboMobile"
                                 android:textColor="@android:color/black"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -218,7 +217,7 @@
                                 android:fontFamily="@font/alegreya_sans"
                                 android:text="Menuju ke halaman pendahuluan"
                                 android:textColor="@android:color/black"
-                                android:textSize="14sp" />
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                             <LinearLayout
@@ -249,7 +248,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman materi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -280,7 +279,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman referensi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -311,7 +310,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman tujuan"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -342,7 +341,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman evaluasi"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -373,7 +372,7 @@
                                     android:fontFamily="@font/alegreya_sans"
                                     android:text="Menuju ke halaman profil"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="16sp" />
                             </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>

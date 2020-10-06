@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
     font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.125em;
     font-feature-settings: "pnum" on, "lnum" on;
     text-align: justify;
     color: #0c120c;
@@ -16,9 +17,6 @@ p + iframe {
     margin-block-end: 0.5em;
     margin-block-start: 0.5em;
 }
-// p#first {
-//     border-radius: 0.625em 0.625em 0em 0em;
-// }
 p.subtitle {
     text-indent: 0%;
     font-weight: bold;

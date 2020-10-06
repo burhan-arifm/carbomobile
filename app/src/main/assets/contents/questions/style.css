@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
     font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.125em;
     text-align: justify;
     color: #0c120c;
     background-color: #fffded;
@@ -8,14 +9,18 @@ body {
 figure {
     display: flex;
     flex-wrap: wrap;
+    margin-block-start: 0.25em;
 }
 img {
     max-width: 100%;
     height: auto;
     margin: 0.125em;
-    border: 1px solid #0c120c;
 }
 figure > img {
     max-width: 45%;
     height: auto;
+    border: 1px solid #0c120c;
+}
+p {
+    margin-block-end: 0.25em;
 }
