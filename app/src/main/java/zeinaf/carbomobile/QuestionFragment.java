@@ -91,7 +91,7 @@ public class QuestionFragment extends Fragment {
             button.setId(j);
             button.setText(shuffledAnswers[j][0]);
             button.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/alegreya_sans_bold.ttf"), Typeface.NORMAL);
-            button.setTextSize(15);
+            button.setTextSize(18);
             button.setTextColor(getActivity().getResources().getColor(R.color.defaultText));
             button.setLayoutParams(new RadioGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             answersWrapper.addView(button);
